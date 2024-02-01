@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #f3f5fc;
+  opacity: 0.8;
+}
+
+.text {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  left: 8%;
+  top: 15%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 150%;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 8px;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 57%;
+  color: #FF0000;
+}
+
+.terms p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.btn {
+  display: flex;
+  padding: 1% 0;
+  position: absolute;
+  width: 80%;
+  top: 60%;
+}
+
+.btn-encrypt {
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background-color: #0a3871;
+  border-radius: 24px;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 35.5%;
+}
+
+
+.btn-encrypt:hover,
+.btn-encrypt:hover {
+  transform: scale(1.05);
+}
+
+.btn-decrypt {
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  border-radius: 24px;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #0a3871;
+  margin-left: 4%;
+}
+
+.btn-decrypt:hover {
+  transform: scale(1.05);
+}
+
+.msj {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  left: 8%;
+  top: 15%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 150%;
+  margin-left: 43%;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 8px;
+}
+
+
+/* Responsive design */
+@media (max-width: 57.5em) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .encrypt {
+    width: 100%;
+  }
+  .text {
+    width: 80%;
+    left: 10%;
+    top: 5%;
+  }
+  .msj {
+    top: 5%;
+    margin-top: 410px;
+  }
+
+  .terms {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+  .terms p {
+    font-size: 16px;
+  }
+  .btn {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+  .ecrypted {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+}
