@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+body {
+  background-image: url('/img/encrypt.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -92,6 +98,11 @@
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
+
+  body {    
+    background-image: url('/img/encrypt\ -\ copia.jpeg');
+  }
+
   .text {
     width: 70%; 
     height: 35vh;
