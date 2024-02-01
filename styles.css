@@ -5,38 +5,29 @@
 
 .container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: #f3f5fc;
   opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
-  position: absolute;
-  width: 40%;
-  height: 40%;
-  left: 8%;
-  top: 15%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 150%;
-  padding-top: 10px;
-  padding-left: 20px;
-  border-radius: 8px;
+  margin-top: 5vh;
+}
+
+.msj {
+  margin-top: 5vh;
 }
 
 .terms {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-  position: absolute;
   width: 80%;
-  left: 12%;
-  top: 57%;
-  color: #FF0000;
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
 }
 
 .terms p {
@@ -45,107 +36,66 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  color: #FF0000;
 }
 
 .btn {
-  display: flex;
-  padding: 1% 0;
-  position: absolute;
   width: 80%;
-  top: 60%;
+  padding: 1% 0;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
 }
 
-.btn-encrypt {
-  padding: 2%;
-  gap: 8px;
-  width: 25%;
-  background-color: #0a3871;
-  border-radius: 24px;
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
-  color: #ffffff;
-  margin-left: 35.5%;
-}
-
-
-.btn-encrypt:hover,
-.btn-encrypt:hover {
-  transform: scale(1.05);
-}
-
-.btn-decrypt {
-  padding: 2%;
-  gap: 8px;
-  width: 25%;
-  border-radius: 24px;
-  font-size: 18px;
-  line-height: 19px;
-  text-align: center;
-  color: #0a3871;
-  margin-left: 4%;
-}
-
-.btn-decrypt:hover {
-  transform: scale(1.05);
-}
-
-.msj {
-  position: absolute;
+.btn button {
   width: 40%;
-  height: 40%;
-  left: 8%;
-  top: 15%;
+  padding: 2%;
+  border-radius: 24px;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.background-encrypt {
+  background-image: url('/img/encrypt.jpeg');
+}
+
+.background-decrypt {
+  background-image: url('/img/decrypt.jpeg');
+}
+
+.text, .msj {
+  width: 80%;
+  height: 30vh;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 150%;
-  margin-left: 43%;
-  padding-top: 10px;
-  padding-left: 20px;
+  padding: 10px 20px;
   border-radius: 8px;
 }
 
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .text, .msj {
+    width: 90%; 
+    height: 20vh;
+    font-size: 20px;
+  }
 
-/* Responsive design */
-@media (max-width: 57.5em) {
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-  .encrypt {
-    width: 100%;
-  }
-  .text {
-    width: 80%;
-    left: 10%;
-    top: 5%;
-  }
   .msj {
-    top: 5%;
-    margin-top: 410px;
+    margin-top: 3vh; 
+  }
+  
+  .text {
+    margin-top: 0;
   }
 
-  .terms {
-    width: 80%;
-    left: 10%;
-    top: 67%;
+  .background-encrypt {
+    background-image: url('/img/encrypt\ -\ copia.jpeg');
   }
-  .terms p {
-    font-size: 16px;
-  }
-  .btn {
-    width: 80%;
-    left: 10%;
-    top: 70%;
-  }
-  .ecrypted {
-    width: 80%;
-    height: 15%;
-    left: 10%;
-    top: 80%;
+  
+  .background-decrypt {
+    background-image: url('/img/decrypt\ -\ copia.jpeg');
   }
 }

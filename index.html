@@ -18,36 +18,17 @@
           id="text"
           cols="30"
           rows="10"
-          placeholder="Enter text here..."
+          placeholder="Enter the text you want to encrypt or decrypt..."
         ></textarea>
-
-        <div class="terms">
-          <p>Enter only lower case.</p>
-        </div>
-        <div class="btn">
-          <button class="btn-encrypt" type="button" onclick="encrypt()">
-            Encrypt
-          </button>
-          <button class="btn-decrypt" type="button" onclick="decrypt()">
-            Decrypt
-          </button>
-        </div>
       </div>
-      
-      <div class="encrypted">
-        <img src="img/muñeco.png" alt="" id="muñeco" />
-        <div class="msj-encrypted" id="msj-encrypted">
-          <h2 id="title-msj">No message found</h2>
-          <p id="paragraph">
-            Enter the text you want to encrypt or decrypt
-          </p>
-          <textarea 
-          name="msj" 
-          id="msj" 
-          class="msj" 
-          cols="30" 
-          rows="10"></textarea>
-        </div>
+
+      <div class="btn">
+        <button class="btn-encrypt" type="button" onclick="encrypt()">
+          Encrypt
+        </button>
+        <button class="btn-decrypt" type="button" onclick="decrypt()">
+          Decrypt
+        </button>
       </div>
     </div>
   </body>
