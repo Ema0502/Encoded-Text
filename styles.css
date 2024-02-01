@@ -7,8 +7,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: #f3f5fc;
-  opacity: 0.8;
+  opacity: 0.9;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,10 +15,6 @@
 }
 
 .text {
-  margin-top: 5vh;
-}
-
-.msj {
   margin-top: 5vh;
 }
 
@@ -47,6 +42,24 @@
   justify-content: space-between;
 }
 
+.btn-encrypt {
+  background-color: #0a3871;
+  border-radius: 24px;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+}
+
+.btn-decrypt{
+  background-color: #fff;
+  border-radius: 24px;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #000;
+}
+
 .btn button {
   width: 40%;
   padding: 2%;
@@ -58,13 +71,15 @@
 
 .background-encrypt {
   background-image: url('/img/encrypt.jpeg');
+  background-size: cover;
 }
 
 .background-decrypt {
   background-image: url('/img/decrypt.jpeg');
+  background-size: cover;
 }
 
-.text, .msj {
+.text {
   width: 80%;
   height: 30vh;
   font-style: normal;
@@ -77,14 +92,10 @@
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
-  .text, .msj {
-    width: 90%; 
-    height: 20vh;
+  .text {
+    width: 70%; 
+    height: 35vh;
     font-size: 20px;
-  }
-
-  .msj {
-    margin-top: 3vh; 
   }
   
   .text {

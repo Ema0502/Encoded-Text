@@ -4,18 +4,12 @@ function encrypt() {
   let paragraph = document.getElementById("paragraph");
 
   let encodedText = text
-    .replace(/e/gi, "anTer")
-    .replace(/i/gi, "eMes")
-    .replace(/a/gi, "iI")
-    .replace(/o/gi, "obeS")
+    .replace(/e/gi, "enT#er")
+    .replace(/i/gi, "iMes")
+    .replace(/a/gi, "aI")
+    .replace(/o/gi, "obeS!")
     .replace(/u/gi, "ufaT")
-    .replace(/y/gi, "nfs")
-    .replace(/é/gi, "enTeR")
-    .replace(/í/gi, "iMeS")
-    .replace(/á/gi, "aI!")
-    .replace(/ó/gi, "obeS_")
-    .replace(/ú/gi, "ufaT")
-    .replace(/n/gi, "gTA");
+    .replace(/y/gi, "nfs");
 
   document.body.classList.remove("background-decrypt");
   document.body.classList.add("background-encrypt");
@@ -37,18 +31,12 @@ function decrypt() {
   let paragraph = document.getElementById("paragraph");
 
   let encodedText = text
-    .replace(/anTer/gi, "e")
-    .replace(/eMes/gi, "i")
-    .replace(/iI/gi, "a")
-    .replace(/obeS/gi, "o")
+    .replace(/enT#er/gi, "e")
+    .replace(/iMes/gi, "i")
+    .replace(/aI/gi, "a")
+    .replace(/obeS!/gi, "o")
     .replace(/ufaT/gi, "u")
-    .replace(/nfs/gi, "y")
-    .replace(/enTeR/gi, "é")
-    .replace(/iMeS/gi, "í")
-    .replace(/aI!/gi, "á")
-    .replace(/obeS_/gi, "ó")
-    .replace(/ufaT/gi, "ú")
-    .replace(/gTA/gi, "n");
+    .replace(/nfs/gi, "y");
 
   document.body.classList.remove("background-encrypt");
   document.body.classList.add("background-decrypt");
